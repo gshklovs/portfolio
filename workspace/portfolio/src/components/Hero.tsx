@@ -1,13 +1,28 @@
 import { motion } from "framer-motion";
 import { profile } from "../content/profile";
 
+const YC_IMG = new URL("../assets/IMG_3457.PNG", import.meta.url).href;
+
 export default function Hero() {
   return (
     <section
       id="home"
-      className="container flex min-h-[80svh] items-center pt-20"
+      className="relative container flex min-h-[80svh] items-center overflow-hidden pt-20"
     >
-      <div className="max-w-3xl">
+      {/* Right-aligned background photo with left fade */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute right-3 top-16 bottom-3 hidden w-[48%] rounded-xl md:block overflow-hidden shadow-2xl ring-1 ring-white/5"
+      >
+        <img
+          src={YC_IMG}
+          alt="YC demo background"
+          className="h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-neutral-950/40 to-neutral-950" />
+      </div>
+
+      <div className="relative z-10 max-w-3xl">
         <motion.h1
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
