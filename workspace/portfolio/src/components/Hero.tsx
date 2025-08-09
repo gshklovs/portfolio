@@ -1,9 +1,12 @@
-import { motion } from 'framer-motion'
-import { profile } from '../content/profile'
+import { motion } from "framer-motion";
+import { profile } from "../content/profile";
 
 export default function Hero() {
   return (
-    <section id="home" className="container flex min-h-[80svh] items-center pt-20">
+    <section
+      id="home"
+      className="container flex min-h-[80svh] items-center pt-20"
+    >
       <div className="max-w-3xl">
         <motion.h1
           initial={{ opacity: 0, y: 12 }}
@@ -37,7 +40,9 @@ export default function Hero() {
             View projects
           </a>
           <a
-            href={profile.socials.find((s) => s.label === 'Devpost')?.href || '#'}
+            href={
+              profile.socials.find((s) => s.label === "Devpost")?.href || "#"
+            }
             target="_blank"
             rel="noreferrer"
             className="rounded-md border border-neutral-800 bg-neutral-900 px-4 py-2 font-medium hover:bg-neutral-800"
@@ -47,5 +52,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

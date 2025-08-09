@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion'
-import { profile } from '../content/profile'
+import { motion } from "framer-motion";
+import { profile } from "../content/profile";
 
 export default function Experience() {
-  if (!profile.experience.length) return null
+  if (!profile.experience.length) return null;
   return (
     <section id="experience" className="container py-16">
       <h2 className="section-title">Experience</h2>
@@ -12,7 +12,7 @@ export default function Experience() {
             key={role.title + role.company}
             initial={{ opacity: 0, y: 12 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-100px' }}
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.4, delay: idx * 0.05 }}
             className="rounded-xl border border-neutral-800/80 bg-neutral-900/60 p-5"
           >
@@ -26,7 +26,9 @@ export default function Experience() {
               </div>
             </div>
             {role.location && (
-              <div className="mt-1 text-sm text-neutral-400">{role.location}</div>
+              <div className="mt-1 text-sm text-neutral-400">
+                {role.location}
+              </div>
             )}
             <ul className="mt-3 list-inside list-disc space-y-1 text-sm text-neutral-300">
               {role.bullets.map((b) => (
@@ -37,5 +39,5 @@ export default function Experience() {
         ))}
       </div>
     </section>
-  )
+  );
 }
