@@ -12,12 +12,12 @@ export default function Hero() {
       {/* Right-aligned background photo with left fade */}
       <div
         aria-hidden
-        className="pointer-events-none absolute right-3 top-16 bottom-3 hidden w-[48%] rounded-xl md:block overflow-hidden shadow-2xl ring-1 ring-white/5"
+        className="pointer-events-none absolute right-3 top-16 bottom-3 hidden w-[48%] md:block overflow-hidden"
       >
         <img
           src={YC_IMG}
           alt="YC demo background"
-          className="h-full w-full object-cover object-center"
+          className="h-full w-full object-cover object-center mask-fade-edges"
         />
         <div className="absolute inset-0 bg-gradient-to-l from-transparent via-neutral-950/40 to-neutral-950" />
       </div>
