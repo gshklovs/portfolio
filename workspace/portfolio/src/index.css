@@ -22,3 +22,14 @@
     @apply inline-flex items-center rounded-full border border-neutral-700/60 bg-neutral-900 px-2.5 py-1 text-xs text-neutral-200;
   }
 }
+
+@layer utilities {
+  .mask-fade-edges {
+    -webkit-mask-image: radial-gradient(120% 120% at 50% 50%, #000 58%, rgba(0,0,0,0.85) 72%, transparent 92%);
+    mask-image: radial-gradient(120% 120% at 50% 50%, #000 58%, rgba(0,0,0,0.85) 72%, transparent 92%);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+}
