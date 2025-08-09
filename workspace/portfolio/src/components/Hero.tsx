@@ -65,6 +65,22 @@ export default function Hero() {
             Devpost
           </a>
         </div>
+
+        {/* Mobile-friendly photo presentation */}
+        <div className="md:hidden">
+          <div className="relative -mx-4 mt-8 h-56 overflow-hidden">
+            <img
+              src={YC_IMG}
+              alt="YC demo background"
+              loading="lazy"
+              decoding="async"
+              className="absolute inset-0 h-full w-full object-cover object-center mask-fade-edges"
+            />
+            {/* Keep subtle left fade for consistency and add bottom fade for seamless blend */}
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-l from-transparent via-neutral-950/20 to-neutral-950/50" />
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-neutral-950 to-transparent" />
+          </div>
+        </div>
       </div>
     </section>
   );
