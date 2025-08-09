@@ -47,10 +47,13 @@ export type MediaAsset = {
 
 // Static asset references resolved by Vite
 const YC_DEMO_IMG = new URL("../assets/IMG_3457.PNG", import.meta.url).href;
+const FOUNDATION_IMG = new URL("../assets/Phantom Purple.jpg", import.meta.url)
+  .href;
 
 export const profile = {
-  name: "Gregory Shklovski",
-  headline: "Startups · Robotics · Robot Learning",
+  name: "Greg Shklovski",
+  headline:
+    "Deploying Humanoid Robots @ Foundation · Robot Learning Research · Startups",
   location: "Irvine, California",
   summary:
     "I build practical robot learning systems and fast demos for startups. My work spans on-device perception, imitation learning for manipulation, and human-in-the-loop interfaces that make robots useful in the real world.",
@@ -142,6 +145,17 @@ export const profile = {
   ] as Project[],
   experience: [
     {
+      title: "Forward Deployed Engineer",
+      company: "Foundation",
+      start: "Aug 2025",
+      end: "Present",
+      location: "Orange County, CA",
+      bullets: [
+        "Deploy humanoid robots to customers; integrate hardware, perception, and control into reliable demos and pilots.",
+        "Close the loop between research and deployment with a focus on safety, reliability, and iteration speed across perception, control, and demos.",
+      ],
+    },
+    {
       title: "Undergraduate Researcher",
       company: "CalPlug, Calit2 (UCI)",
       start: "Sep 2023",
@@ -206,6 +220,12 @@ export const profile = {
       caption:
         "Demoing Hungry Monkey at YC — rescuing your last-minute holiday restaurant search.",
       link: "https://github.com/rovirmani/hungry-monkey",
+    },
+    {
+      title: "Foundation Phantom MK1",
+      kind: "image",
+      src: FOUNDATION_IMG,
+      caption: "Foundation Phantom MK1 — field deployment work.",
     },
     // Placeholders for upcoming assets (add files and update if available)
     // { title: 'Foundation robot', kind: 'image', src: FOUNDATION_IMG, caption: 'Deployment work', },
