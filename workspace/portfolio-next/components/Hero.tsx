@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { motion } from "framer-motion";
 import { profile } from "@/content/profile";
@@ -8,7 +8,6 @@ export default function Hero() {
   // Use optimized public asset
   const YC_IMG = "/img/IMG_3457-1600.jpg";
 
-
   return (
     <section
       id="home"
@@ -16,17 +15,28 @@ export default function Hero() {
     >
       <div
         aria-hidden
-        className="pointer-events-none absolute right-3 top-16 bottom-3 hidden w-[48%] rounded-xl md:block overflow-hidden shadow-2xl ring-1 ring-white/5"
+        className="pointer-events-none absolute right-3 top-16 bottom-3 hidden w-[48%] rounded-xl md:block overflow-hidden bg-neutral-950"
       >
-        <Image
-          src={YC_IMG}
-          alt="YC demo background"
-          fill
-          sizes="(min-width: 768px) 48vw, 0px"
-          className="object-cover object-center"
-          priority
+        <div className="absolute inset-0 [--main:40%] [--edge:calc(var(--main)_/_5)] [-webkit-mask-image:linear-gradient(to_right,rgba(0,0,0,0)_0,rgba(0,0,0,1)_var(--main))] [mask-image:linear-gradient(to_right,rgba(0,0,0,0)_0,rgba(0,0,0,1)_var(--main))] [-webkit-mask-repeat:no-repeat] [mask-repeat:no-repeat]">
+          <div className="absolute inset-0 [-webkit-mask-image:linear-gradient(to_bottom,rgba(0,0,0,0)_0,rgba(0,0,0,1)_var(--edge))] [mask-image:linear-gradient(to_bottom,rgba(0,0,0,0)_0,rgba(0,0,0,1)_var(--edge))] [-webkit-mask-repeat:no-repeat] [mask-repeat:no-repeat]">
+            <div className="absolute inset-0 [-webkit-mask-image:linear-gradient(to_top,rgba(0,0,0,0)_0,rgba(0,0,0,1)_var(--edge))] [mask-image:linear-gradient(to_top,rgba(0,0,0,0)_0,rgba(0,0,0,1)_var(--edge))] [-webkit-mask-repeat:no-repeat] [mask-repeat:no-repeat]">
+              <div className="absolute inset-0 [-webkit-mask-image:linear-gradient(to_left,rgba(0,0,0,0)_0,rgba(0,0,0,1)_var(--edge))] [mask-image:linear-gradient(to_left,rgba(0,0,0,0)_0,rgba(0,0,0,1)_var(--edge))] [-webkit-mask-repeat:no-repeat] [mask-repeat:no-repeat]">
+                <Image
+                  src={YC_IMG}
+                  alt="YC demo background"
+                  fill
+                  sizes="(min-width: 768px) 48vw, 0px"
+                  className="object-cover object-center"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-0 rounded-[inherit] shadow-[inset_0_0_200px_120px_#0a0a0a]"
         />
-        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-neutral-950/40 to-neutral-950" />
       </div>
 
       <div className="relative z-10 max-w-3xl">
@@ -62,7 +72,9 @@ export default function Hero() {
             View projects
           </a>
           <a
-            href={profile.socials.find((s) => s.label === "Devpost")?.href || "#"}
+            href={
+              profile.socials.find((s) => s.label === "Devpost")?.href || "#"
+            }
             target="_blank"
             rel="noreferrer"
             className="rounded-md border border-neutral-800 bg-neutral-900 px-4 py-2 font-medium hover:bg-neutral-800"
