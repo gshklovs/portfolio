@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative container flex min-h-[80svh] items-center overflow-hidden pt-20"
+      className="relative container flex flex-col md:flex-row min-h-[80svh] items-center overflow-hidden pt-20"
     >
       <div
         aria-hidden
@@ -81,6 +81,20 @@ export default function Hero() {
           >
             Devpost
           </a>
+        </div>
+      </div>
+
+      {/* Mobile-friendly YC image (below text on small screens) */}
+      <div className="mt-6 w-full md:hidden">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl bg-neutral-900">
+          <Image
+            src="/img/IMG_3457-800.jpg"
+            alt="YC demo background"
+            fill
+            sizes="100vw"
+            className="object-cover object-center"
+          />
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-neutral-950/60 to-transparent" />
         </div>
       </div>
     </section>

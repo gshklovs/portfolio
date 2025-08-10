@@ -2,7 +2,7 @@
 
 I build practical robot learning systems and fast demos for startups. My work spans on‑device perception, imitation learning for manipulation, and human‑in‑the‑loop interfaces that make robots useful in the real world.
 
-Links: [LinkedIn](https://www.linkedin.com/in/gshklovski/) · [GitHub](https://github.com/gshklovski) · [Devpost](https://devpost.com/gshklovs) · [Google Scholar](https://scholar.google.com/citations?user=qeECtykAAAAJ&hl=en&oi=ao)
+Links: [LinkedIn](https://www.linkedin.com/in/gshklovski/) · [GitHub](https://github.com/gshklovs) · [Devpost](https://devpost.com/gshklovs) · [Google Scholar](https://scholar.google.com/citations?user=qeECtykAAAAJ&hl=en&oi=ao)
 
 ---
 
@@ -105,4 +105,4 @@ Upcoming assets (placeholders; add to `workspace/portfolio/src/assets/`):
 
 ## Contact
 
-Best way to reach me is via [LinkedIn](https://www.linkedin.com/in/gshklovski/). Repos and demos on [GitHub](https://github.com/gshklovski) and [Devpost](https://devpost.com/gshklovs).
+Best way to reach me is via [LinkedIn](https://www.linkedin.com/in/gshklovski/). Repos and demos on [GitHub](https://github.com/gshklovs) and [Devpost](https://devpost.com/gshklovs).

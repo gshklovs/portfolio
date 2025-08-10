@@ -9,6 +9,7 @@ export type Project = {
   tags: string[];
   year?: string;
   link?: string;
+  image?: string; // Optional image to use for OG/Twitter previews
 };
 
 export type Experience = {
@@ -49,7 +50,6 @@ export type MediaAsset = {
 const YC_DEMO_BASE = "/img/IMG_3457";
 const FOUNDATION_BASE = "/img/Phantom Purple";
 
-
 export const profile = {
   name: "Greg Shklovski",
   headline:
@@ -59,7 +59,7 @@ export const profile = {
     "I build practical robot learning systems and fast demos for startups. My work spans on-device perception, imitation learning for manipulation, and human-in-the-loop interfaces that make robots useful in the real world.",
   socials: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/gshklovski/" },
-    { label: "GitHub", href: "https://github.com/gshklovski" },
+    { label: "GitHub", href: "https://github.com/gshklovs" },
     { label: "Devpost", href: "https://devpost.com/gshklovs" },
   ] as SocialLink[],
   skills: [

@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     title: "Greg Shklovski · Portfolio",
     description:
       "Projects, experience, and contact for Greg Shklovski (CSE @ UCI 2025).",
+    siteName: "Greg Shklovski · Portfolio",
     type: "website",
     url: "https://greg.shklovski.net",
     images: [
