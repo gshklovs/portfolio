@@ -45,9 +45,10 @@ export type MediaAsset = {
   link?: string;
 };
 
-// Public asset paths in Next.js
-const YC_DEMO_IMG = "/assets/IMG_3457.PNG";
-const FOUNDATION_IMG = "/assets/Phantom Purple.jpg";
+// Public asset paths in Next.js (use base names; components can pick variants)
+const YC_DEMO_BASE = "/img/IMG_3457";
+const FOUNDATION_BASE = "/img/Phantom Purple";
+
 
 export const profile = {
   name: "Greg Shklovski",
@@ -215,7 +216,7 @@ export const profile = {
     {
       title: "Hungry Monkey — YC demo photo",
       kind: "image",
-      src: YC_DEMO_IMG,
+      src: `${YC_DEMO_BASE}-1200.jpg`,
       caption:
         "Demoing Hungry Monkey at YC — rescuing your last-minute holiday restaurant search.",
       link: "https://github.com/rovirmani/hungry-monkey",
@@ -223,7 +224,7 @@ export const profile = {
     {
       title: "Foundation Phantom MK1",
       kind: "image",
-      src: FOUNDATION_IMG,
+      src: `${FOUNDATION_BASE}-800.jpg`,
       caption: "Foundation Phantom MK1 — field deployment work.",
     },
   ] as MediaAsset[],

@@ -45,10 +45,9 @@ export type MediaAsset = {
   link?: string;
 };
 
-// Static asset references resolved by Vite
-const YC_DEMO_IMG = new URL("../assets/IMG_3457.PNG", import.meta.url).href;
-const FOUNDATION_IMG = new URL("../assets/Phantom Purple.jpg", import.meta.url)
-  .href;
+// Optimized public asset references
+const YC_DEMO_IMG = "/img/IMG_3457-1200.jpg"; // fallback; AVIF/WebP served via <picture>
+const FOUNDATION_IMG = "/img/Phantom Purple-800.jpg"; // fallback; AVIF/WebP served via <picture>
 
 export const profile = {
   name: "Greg Shklovski",

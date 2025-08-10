@@ -5,8 +5,9 @@ import { profile } from "@/content/profile";
 import Image from "next/image";
 
 export default function Hero() {
-  // Use public asset path for the background image to avoid import.meta.url
-  const YC_IMG = "/assets/IMG_3457.PNG";
+  // Use optimized public asset
+  const YC_IMG = "/img/IMG_3457-1600.jpg";
+
 
   return (
     <section
