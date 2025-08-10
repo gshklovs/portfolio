@@ -8,6 +8,7 @@ export default function Hero() {
   // Use optimized public asset
   const YC_IMG = "/img/IMG_3457-1600.jpg";
 
+
   return (
     <section
       id="home"

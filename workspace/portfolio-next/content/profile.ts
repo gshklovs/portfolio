@@ -49,6 +49,7 @@ export type MediaAsset = {
 const YC_DEMO_BASE = "/img/IMG_3457";
 const FOUNDATION_BASE = "/img/Phantom Purple";
 
+
 export const profile = {
   name: "Greg Shklovski",
   headline:
